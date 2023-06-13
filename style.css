@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url("https://unsplash.it/3200");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.form-conatiner {
+    position: relative;
+    background: #f3f3f340;
+    box-shadow: 0 8px 32px 0 #3a3a425e;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: max-content;
+    padding: 2rem 3rem ;
+    width: 350px;
+    border-radius: 20px;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+.form-conatiner img{
+    /* position: absolute;
+    top: 5%; */
+    width: 200px;
+    height: 200px;
+    clip-path: circle();
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 #0202025e;
+}
+.field-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    width: max-content;
+}
+input{
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 12px;
+}
+input[type=button]{
+    background-color: #518de6;
+    transition: all .5s;
+    cursor: pointer;
+    padding: 0.8rem 1.5rem;
+}
+input[type=button]:hover{
+    background-color: #3862a1;
+    border-radius: 50px;
+}
+.btn{
+    color: #fff;
+}
+input[type=email]:focus, input[type=password]:focus{
+    outline:  #518de6 solid 2px;
+    box-shadow: 0 8px 32px 0 #82c3ff5e;
+}
